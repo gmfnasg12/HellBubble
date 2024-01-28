@@ -16,7 +16,7 @@ public class Alarm : MonoBehaviour
     }
     public void SetAlarmValue(float value)
     {
-        Fill.fillAmount= value/ maxValue;
-        Fill.color = AlarmGradient.Evaluate(value / maxValue);
+        Fill.fillAmount = 1 - value/ maxValue;
+        Fill.color = AlarmGradient.Evaluate(1 - value / maxValue);
     }
 }

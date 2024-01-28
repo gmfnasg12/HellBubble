@@ -29,6 +29,7 @@ public class PopControler : MonoBehaviour
         OnClick = onClick;
         gameObject.SetActive(true);
         popType = set_popType;
+        orgSize = gameObject.transform.localScale;
     }
 
     public void Hide()
